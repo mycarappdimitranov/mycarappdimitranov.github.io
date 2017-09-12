@@ -30,6 +30,15 @@ body {
         background-image: linear-gradient(to top, #2F4F4F 0%, #2F2727 100%);*/
         background-color: white;
 }
+
+
+    .logo {
+    position: absolute;
+    width: 50px;
+    left: 0;
+    z-index: 2;
+
+}
     .car-app-title{
            position: relative;
     text-align: center;
@@ -123,7 +132,7 @@ body {
     .Main1c {
         
         width: 100%;
-        height: 700px;
+        height: 750px;
         -webkit-border-radius: 0px;
         position: relative;
         border: 1px #9966ff;
@@ -136,7 +145,7 @@ body {
     .Main11,.Main12 {
         
         width: 100%;
-        height: 700px;
+        height: 740px;
         -webkit-border-radius: 0px;
         position: relative;
         border: 1px #9966ff;
@@ -222,14 +231,19 @@ body {
     border-top: none;
     -webkit-appearance: none;
     font-size: 28px;
-    text-align: right;
+    text-align: right;transition: 0.2s;
     border-left: none;
     border-right: none;
+    
 
     }
 input::-webkit-input-placeholder {
     font-size: 22px;
     line-height: 3;
+}
+input[type='number']:focus{
+    font-size: 30px;transition: 0.2s;
+     border-bottom: solid #111 3px;
 }
 select {
     width: 60%;
@@ -320,58 +334,6 @@ select {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /*footer*/
     footer {
         width: 100%;
@@ -400,4 +362,73 @@ select {
         font-family: tahoma;
         letter-spacing: 1px;
         color: #fff;
+    }
+
+@media only screen and (max-width : 380px) {
+
+
+select {
+    width: 65%;
+}
+
+.button2,.button21,.button22 {
+padding: 20px 35px;
+    }
+
+
+}
+
+
+    @media only screen and (max-width : 340px) {
+
+.header{
+    height: 60px;
+}
+.navbardiv,li a {
+    height: 50px;
+}
+.MainTitleOfpage {
+    font-size: 25px;
+}
+
+.NAVPIC {
+    width: 33px;
+    
+  
+    top: 8px;
+}
+
+.switchMoney, .switchLiter {
+        height: 45px;font-size: 18px;
+}
+
+
+
+.text1, .text2, .text3, .text4, .text5, .text6, .text7, .text9 {
+    font-size: 20px;
+}
+
+
+.i1, .i2, .i3, .i5, .i4, .i6, .i8, select {
+    height: 30px;font-size: 24px;
+}
+input[type='number']:focus{
+    font-size: 27px;
+    
+
+}
+.span1 {
+    font-size: 17px;
+}
+.button2, .button21, .button22 {
+    padding: 20px 30px; font-size: 16px;
+    position: relative;
+    left: -8px;
+}
+.clear_btn {
+    font-size: 16px;
+}
+.copy, .phone {
+    font-size: 15px;
+}
     }
