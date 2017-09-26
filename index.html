@@ -871,6 +871,10 @@ $(".button2 , .button21 , .button22 , .clear_btn").bind('touchstart touchend', f
         
         $(this).toggleClass('button_clicked');
     });
+$("input").click(function(event) {
+  var filter_scroll_top = $(this).offset().top;
+  $("html, body").animate({ scrollTop: filter_scroll_top-45 }, 200);
+});
 
 
     });
